@@ -56,11 +56,11 @@ public partial class VoiceChatManager : Node
 		};
 		ConnectButton.Pressed += () => {
 			Error status = Peer.CreateClient(IPTextBox.Text, 19994);
-            		if (status != Error.Ok)
+			if (status != Error.Ok)
 			{
 				SetStatus("Could not connect " + status);
-			return;
-            		}
+				return;
+			}
 			
 			Multiplayer.MultiplayerPeer = Peer;
 			SetStatus("Connecting to server " + IPTextBox.Text + ":" + 19994);
