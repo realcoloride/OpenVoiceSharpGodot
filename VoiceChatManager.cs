@@ -74,6 +74,7 @@ public partial class VoiceChatManager : Node
 		AudioServer.AddBus(reverbBusIdx);
 		AudioServer.AddBusEffect(reverbBusIdx, new AudioEffectReverb(), 0);
 		AudioServer.SetBusName(reverbBusIdx, "VC");
+		AudioServer.SetBusEffectEnabled(reverbBusIdx, 0, false);
 
 		ReverbBox.Toggled += (toggled) => {
 			AudioServer.SetBusEffectEnabled(reverbBusIdx, 0, toggled);
