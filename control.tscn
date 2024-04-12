@@ -1,7 +1,6 @@
-[gd_scene load_steps=3 format=3 uid="uid://cpm6c68jhddr7"]
+[gd_scene load_steps=2 format=3 uid="uid://cpm6c68jhddr7"]
 
 [ext_resource type="Script" path="res://VoiceChatManager.cs" id="2_oeagp"]
-[ext_resource type="AudioStream" path="res://test2.wav" id="3_ixqbx"]
 
 [node name="Control" type="Control"]
 layout_mode = 3
@@ -11,7 +10,7 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="Label" type="Label" parent="."]
+[node name="IPLabel" type="Label" parent="."]
 layout_mode = 0
 offset_right = 455.0
 offset_bottom = 63.0
@@ -43,15 +42,12 @@ text = "Not connected"
 script = ExtResource("2_oeagp")
 
 [node name="Host" type="Button" parent="."]
+layout_mode = 0
 offset_left = 304.0
 offset_top = 63.0
 offset_right = 398.0
 offset_bottom = 94.0
 text = "Host"
-
-[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
-stream = ExtResource("3_ixqbx")
-bus = &"VC"
 
 [node name="NoiseSuppression" type="CheckBox" parent="."]
 layout_mode = 0
@@ -61,6 +57,7 @@ offset_bottom = 130.0
 text = "Enable noise suppression (RNNoise)"
 
 [node name="Reverb" type="CheckBox" parent="."]
+layout_mode = 0
 offset_top = 140.0
 offset_right = 305.0
 offset_bottom = 171.0
