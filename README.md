@@ -1,6 +1,6 @@
 # OpenVoiceSharp Voice Chat Godot Example
 
-Everything you need to know is here: https://github.com/realcoloride/OpenVoiceSharp
+Everything you need to know is here: https://github.com/realcoloride/OpenVoiceSharp and here: https://github.com/realcoloride/OpenVoiceSharp/wiki/Using-with-Godot-Engine
 
 # Demo
 
